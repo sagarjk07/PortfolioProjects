@@ -5,7 +5,7 @@ from ProtfolioProject..CovidDeaths
 order by 1,2
 
 -- Looking at the total cases vs total deaths
--- Shows likelihood of dying if you cantract covid in your country
+-- Shows likelihood of dying if you contract covid in your country
 
 Select Location, date, total_cases, total_deaths, (cast(total_deaths as float)/cast(total_cases as float))*100 as DeathPercentage
 from ProtfolioProject..CovidDeaths
